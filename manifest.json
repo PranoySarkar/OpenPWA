@@ -1,7 +1,7 @@
 {
   "name": "Posture Corrector",
   "short_name": "Posture Corrector",
-  "start_url": "OpenPWA",
+  "start_url": "/OpenPWA",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
