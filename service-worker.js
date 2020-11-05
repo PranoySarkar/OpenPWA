@@ -1,13 +1,13 @@
 let cacheName = "OpenGithubPWA" ;
 
 let filesToCache = [
-  "/",
-  "/index.html",
-  "/js/main.js",
-  "/js/install-handler.js",
-  "/js/settings.js",
-  "/css/main.css",
-  "/assets/icons/icon.png"
+ 
+  "index.html",
+  "js/main.js",
+  "js/install-handler.js",
+  "js/settings.js",
+  "css/main.css",
+  "assets/icons/icon.png"
 ];
 
 self.addEventListener("install", function (event) {
