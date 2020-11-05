@@ -1,7 +1,8 @@
 {
   "name": "Posture Corrector",
   "short_name": "Posture Corrector",
-  "start_url": "/OpenPWA",
+  "start_url": "./",
+  "scope": ".",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
@@ -18,12 +19,12 @@
       "sizes": "96x96"
     },
     {
-      "src":"assets/icons/icon.png",
+      "src": "assets/icons/icon.png",
       "sizes": "128x128",
       "type": "image/png"
     },
     {
-      "src":"assets/icons/icon.png",
+      "src": "assets/icons/icon.png",
       "sizes": "144x144",
       "type": "image/png"
     },
