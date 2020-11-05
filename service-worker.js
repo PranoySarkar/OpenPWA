@@ -8,8 +8,6 @@ let filesToCache = [
   "js/settings.js",
   "css/main.css",
   "assets/icons/icon.png",
-  "favicon-16x16.png",
-  "favicon-32x32.png",
   "manifest.json"
   // add your assets here 
   // ❗️❕donot add config.json here ❗️❕
