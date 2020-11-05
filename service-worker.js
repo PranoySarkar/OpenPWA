@@ -1,7 +1,7 @@
-let cacheName = "OpenGithubPWA";
+let cacheName = "OpenGithubPWA";// 👈 any unique name
 
 let filesToCache = [
-  "/OpenPWA/",
+  "/OpenPWA/", // 👈 your repository name , both slash are important
   "service-worker.js",
   "js/main.js",
   "js/install-handler.js",
@@ -11,6 +11,8 @@ let filesToCache = [
   "favicon-16x16.png",
   "favicon-32x32.png",
   "manifest.json"
+  // add your assets here 
+  // ❗️❕donot add config.json here ❗️❕
 ];
 
 self.addEventListener("install", function (event) {
