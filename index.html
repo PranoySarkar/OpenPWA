@@ -10,8 +10,8 @@
    <!--Social meta-->
     <meta property="og:title" content="Open Github PWA" />
     <meta property="og:url" content="" />
-    <meta property="og:description" content="A sitting posture assistance health app" />
-    <meta property="og:image" content="https://www.posturecorrector.app/assets/posture-corrector.jpg" />
+    <meta property="og:description" content="This is a PWA boilerplate, with cache busting mechanism and preconfigured Github Pages deployment" />
+    <meta property="og:image" content="/assets/posture-corrector.jpg" />
     <meta property="og:type" content="website" />
     <!---->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -66,7 +66,7 @@
     <script type="text/javascript">
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker
-                .register(`https://pranoysarkar.github.io/OpenPWA/service-worker.js`)
+                .register(`/OpenPWA/service-worker.js`)
                 .then(function () {
                     console.log("Service Worker Registered");
                 });
