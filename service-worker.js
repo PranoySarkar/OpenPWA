@@ -3,7 +3,6 @@ let cacheName = "OpenGithubPWA";
 let filesToCache = [
   "https://pranoysarkar.github.io/OpenPWA/",
   "service-worker.js",
-  "/OpenPWA",
   "js/main.js",
   "js/install-handler.js",
   "js/settings.js",
