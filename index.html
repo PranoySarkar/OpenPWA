@@ -66,7 +66,7 @@
     <script type="text/javascript">
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker
-                .register(`/service-worker.js`, { scope: '/OpenPWA/' })
+                .register(`https://pranoysarkar.github.io/OpenPWA/service-worker.js`, { scope: '/OpenPWA/' })
                 .then(function () {
                     console.log("Service Worker Registered");
                 });
