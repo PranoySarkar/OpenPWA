@@ -1,8 +1,8 @@
-let cacheName = "OpenGithubPWA" ;
+let cacheName = "OpenGithubPWA";
 
 let filesToCache = [
- 
-
+  "https://pranoysarkar.github.io/OpenPWA/",
+  "https://pranoysarkar.github.io/OpenPWA/service-worker.js",
   "/OpenPWA",
   "/OpenPWA/index.html",
   "js/main.js",
@@ -27,10 +27,10 @@ self.addEventListener('fetch', function (event) {
   }
 
   event.respondWith(caches.match(event.request).then(function (response) {
-    if(response){
+    if (response) {
       console.log('served form cache')
-    }else{
-      console.log('Not serving from cache ',event.request.url)
+    } else {
+      console.log('Not serving from cache ', event.request.url)
     }
     return response || fetch(event.request);
   })
@@ -42,7 +42,7 @@ self.addEventListener('activate', function (e) {
     caches.keys().then(function (keyList) {
       return Promise.all(keyList.map(function (key) {
         if (key !== cacheName) {
-         console.log('service worker: Removing old cache', key);
+          console.log('service worker: Removing old cache', key);
           return caches.delete(key);
         }
       }));
