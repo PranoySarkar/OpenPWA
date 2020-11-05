@@ -2,7 +2,7 @@ let cacheName = "OpenGithubPWA" ;
 
 let filesToCache = [
  
-  
+  "/",
   "/OpenPWA",
   "/OpenPWA/index.html",
   "js/main.js",
