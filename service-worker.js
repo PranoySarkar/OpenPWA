@@ -4,7 +4,6 @@ let filesToCache = [
   "https://pranoysarkar.github.io/OpenPWA/",
   "service-worker.js",
   "/OpenPWA",
-  "/OpenPWA/index.html",
   "js/main.js",
   "js/install-handler.js",
   "js/settings.js",
