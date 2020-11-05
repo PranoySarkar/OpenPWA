@@ -1,0 +1,40 @@
+html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: #FFF0;
+}
+
+body {
+    margin: 0;
+    color: #636363;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+header {
+    text-align: center;
+}
+.downloadPrompt {
+    display: none;
+    padding: 10px;
+    box-shadow: 0px 0 7px 4px #00000030;
+    display: flex;
+    justify-content: center;
+}
+
+.downloadButton {
+    background: #109d58;
+    color: aliceblue;
+    padding: 5px 10px;
+    min-width: 100px;
+    border-radius: 2px;
+    border: 1px solid #00723b;
+    text-transform: uppercase;
+    /* box-shadow: -10px 6px 5px 1px #109d581a; */
+}
+
+#appContainer {
+    overflow: hidden;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr auto;
+}
