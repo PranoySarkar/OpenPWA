@@ -9,7 +9,10 @@ let filesToCache = [
   "js/install-handler.js",
   "js/settings.js",
   "css/main.css",
-  "assets/icons/icon.png"
+  "assets/icons/icon.png",
+  "favicon-16x16.png",
+  "favicon-32x32.png",
+  "manifest.json"
 ];
 
 self.addEventListener("install", function (event) {
