@@ -4,7 +4,7 @@ let filesToCache = [
  
   
   "/OpenPWA",
-  "index.html",
+  "/OpenPWA/index.html",
   "js/main.js",
   "js/install-handler.js",
   "js/settings.js",
