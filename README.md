@@ -1,12 +1,16 @@
- # Posture Corrector
- ##### Posture corrector is a 👦 fun habit changing app which notifies  📳 you when you are not sitting properly.
+ # 🔸OpenPWA🔸
+ ##### OpenPWA is a boilerplate for deploying pwa using Github Pages.
 
 
-# [Install Now](https://www.posturecorrector.app/)
+# [Open PWA](http://pranoysarkar.github.io/OpenPWA/)
 
-#### How to use Posture Corrector?
-- Sit properly and relax as shown in the above video
-- Press the Start Button and put your phone in your chest pocket, phone pouch or in Bra strap, it will auto detect and lock your posture
-- Done! continue your work. If you change your position significant enough it will notify you by vibration, beep and red status. Once you move back to the correct posture the notification will stop automatically
+#### How to build your own?
+- Fork this project on github
+- Enable Github pages option in settings
+- Done!! Get the link in the GitHub pages section
+
+# ❗️❕ This includes cache busting mechnism, as pwa serves from cache so changes will not be refected untill you change the version in config.json
+
+# ❗️❕ On changing repository name you need to update the reposity name in 👉 "service-worker.js", line no 4
 
 This is a PWA, everything is made using webtechnologies. 🍄 
