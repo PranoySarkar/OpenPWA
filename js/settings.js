@@ -20,3 +20,5 @@ var Settings = {
 
 
 }
+
+Settings.initIfNot();

@@ -9,6 +9,9 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.body {
+    padding: 1rem;
+}
 
 header {
     text-align: center;
@@ -17,7 +20,6 @@ header {
     display: none;
     padding: 10px;
     box-shadow: 0px 0 7px 4px #00000030;
-    display: flex;
     justify-content: center;
 }
 
@@ -36,5 +38,5 @@ header {
     overflow: hidden;
     display: grid;
     height: 100vh;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: auto 1fr auto;
 }

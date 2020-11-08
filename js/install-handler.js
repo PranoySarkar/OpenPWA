@@ -17,15 +17,16 @@ function downloadButtonClicked() {
             if (choiceResult.outcome === 'accepted') {
 
                 deferredInstallPrompt = null;
+                document.querySelector('.downloadPrompt').style.display = 'none';
+
             }else{
-                console.log()
+                console.log(choiceResult)
             }
         })
 }
 
 function showDownloadPrompt() {
     document.querySelector('.downloadPrompt').style.display = 'grid';
-
 }
 
 

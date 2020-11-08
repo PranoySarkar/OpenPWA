@@ -11,13 +11,7 @@ function main(){
 
 }
 
-function handleInstall(){
 
-  
-
-   
-
-}
 
 
 function vaildateCacheIfOnline(){
@@ -28,11 +22,13 @@ function vaildateCacheIfOnline(){
         .then(response => { return response.json() })
         .then(config => {
 
-            if (Settings.getVersion() == 0) {
+            let installedVersion = Settings.getVersion()
+            if ( installedVersion== 0) {
                 Settings.setVersion(config.version)
+                document.querySelector('#version').innerHTML= `version ${config.version}`;
                 return resolve();
             }
-            else if (Settings.getVersion() != config.version) {
+            else if (installedVersion != config.version) {
                 console.log('Cache Version mismatch')
                 fetch(`config.json?clean-cache=true&cacheBust=${new Date().getTime()}`).then(_ => {
                     //actually cleans the cache
@@ -45,6 +41,7 @@ function vaildateCacheIfOnline(){
             }else{
                 // already updated
                 console.log('Cache Updated')
+                document.querySelector('#version').innerHTML= `version ${installedVersion}`;
                 return resolve();
             }
         }).catch(err=>{
