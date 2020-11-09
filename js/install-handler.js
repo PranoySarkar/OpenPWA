@@ -19,7 +19,7 @@ function downloadButtonClicked() {
                 deferredInstallPrompt = null;
                 document.querySelector('.downloadPrompt').style.display = 'none';
 
-            }else{
+            } else {
                 console.log(choiceResult)
             }
         })
@@ -28,5 +28,18 @@ function downloadButtonClicked() {
 function showDownloadPrompt() {
     document.querySelector('.downloadPrompt').style.display = 'grid';
 }
+
+window.addEventListener('appinstalled', (evt) => {
+    // Log install to analytics
+    
+    if (!isInStandaloneMode()) {
+        alert('open in app');
+    }
+});
+
+
+const isInStandaloneMode = () =>
+    (window.matchMedia('(display-mode: standalone)').matches) || (window.navigator.standalone) || document.referrer.includes('android-app://');
+
 
 
