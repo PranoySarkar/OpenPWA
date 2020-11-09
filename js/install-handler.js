@@ -38,8 +38,7 @@ window.addEventListener('appinstalled', (evt) => {
 });
 
 
-const isInStandaloneMode = () =>
-    (window.matchMedia('(display-mode: standalone)').matches) || (window.navigator.standalone) || document.referrer.includes('android-app://');
+const isInStandaloneMode = () =>(window.matchMedia('(display-mode: standalone)').matches) || (window.navigator.standalone) || document.referrer.includes('android-app://');
 
 
 
