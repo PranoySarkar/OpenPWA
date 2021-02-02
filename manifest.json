@@ -7,6 +7,7 @@
   "orientation": "portrait",
   "background_color": "#fff",
   "theme_color": "#640700",
+  "newBranch":"true",
   "icons": [
     {
       "src": "assets/icons/icon.png",
